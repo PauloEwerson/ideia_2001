@@ -1,4 +1,7 @@
 /*Tablets*/
+body {
+  background: #c01010;
+}
 @media only screen 
 and (min-device-width: 768px) 
 /* and (max-device-width: 1024px)  */
@@ -8,9 +11,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
   
   body {
-    position: relative;
-    width: 768px;
-    height: 1024px;
+    /* position: relative; */
+    /* width: 768px;
+    height: 1024px; */
     background: #444242;
   }
 
@@ -23,46 +26,68 @@ and (-webkit-min-device-pixel-ratio: 1) {
     isolation: isolate;
     
     position: absolute;
-    width: 768px;
+    width: 100%;
     height: 20px;
     left: 0px;
     top: 22px;
-    
-    background: #444242;
-  }
 
-  .icone-header-voltar {
-    width: 20px;
-    height: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1px;
+    /* background: #444242; */
+    /* background: #0f0f0f; */
   }
 
   .logo-header {
+    display: none;
     position: absolute;
-    display: block;
     width: 122px;
     height: 38.01px;
     left: calc(50% - 122px/2);
     top: 12.99px;
-    
+
     flex: none;
     order: 0;
     flex-grow: 0;
     z-index: 0;
   }
 
+  .icone-header-voltar {
+    /* background: yellow; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 90%;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+  }
+
+  .icone-header-voltar img {
+    width: 20px;
+    height: 16px;
+    
+    /* background: #FFFFFF; */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
   .header-botoes {
+    /* background: red; */
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
     padding: 0px;
-    gap: 16px;
     
-    width: 26px;
+    width: 100%;
     height: 20px;
     
     flex: none;
@@ -70,31 +95,47 @@ and (-webkit-min-device-pixel-ratio: 1) {
     flex-grow: 0;
     z-index: 2;
   }
-
+ 
   .header-botoes-car-fav {
-    display: block;
-    width: 32px;
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
     height: 27px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* background: green;        */
+    /* padding: 30px; */
   }
 
-  #qtd-fav {
+  .qtd-fav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    width: 39px;
+  }
+
+  .qtd-fav div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0,3px;
     
     position: absolute;
     width: 16px;
+    /* width: 50%; */
     height: 16px;
-    left: 16px;
+    /* left: 16px; */
     top: 0px;
     
     background: #FA9401;
     border-radius: 20px;
   }
 
-  #qtd-fav p {
+  .qtd-fav p {
     width: 5.83px;
     height: 11.67px;
 
@@ -111,28 +152,47 @@ and (-webkit-min-device-pixel-ratio: 1) {
     color: #FFFFFF;
   }
 
-  #car-fav {
+  .car-fav {
+    background: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1px;
-    
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 0px;
-    top: 6px;     
+    margin-right: 30px;
+
+    width: 32px;
+    height: 100%;
+
+    text-align: center;
+
+    color: #FFFFFF;
   }
 
-  #car-fav img {
+  .car-fav img {
     width: 20px;
     height: 19px;
-
+    
     /* background: #FFFFFF; */
     
     flex: none;
     order: 0;
+    flex-grow: 0;
+  }
+  
+  .icone-header-menu {
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-right: 30px;
+
+    width: 26px;
+    height: 20px;
+
+    flex: none;
+    order: 1;
     flex-grow: 0;
   }
 
@@ -152,19 +212,53 @@ and (-webkit-min-device-pixel-ratio: 1) {
     border-radius: 50px;
   }
 
-  .logo-botoes {
+  .main-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 50px;
+    height: 100vh;
+    /* background: #c01010; */
+  }
+
+  .logo-botoes {
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    /* gap: 50px; */
     
-    position: absolute;
-    width: 265px;
+    /* position: relative; */
+    /* width: 265px; */
     height: 370px;
-    left: 252px;
-    top: 327px;
+    /* left: 252px;
+    top: 327px; */
+  }
+
+  .logo {
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    /* margin-top: 30%; */
+    
+    width: 240.52px;
+    height: 75px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .menu-buttons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .menu-buttons button {
@@ -173,7 +267,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 10px;
+    margin-top: 10px;
     
     width: 265px;
     height: 50px;
@@ -181,6 +275,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
     background: #444242;
     border: 1px solid #FA9401;
     border-radius: 50px;
+  }
+
+  .menu-buttons img {
+    padding: 10px;
   }
 
   .menu-buttons button:focus {
@@ -207,36 +305,17 @@ and (-webkit-min-device-pixel-ratio: 1) {
     flex-grow: 0;
   }
 
-  .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    
-    width: 240.52px;
-    height: 75px;
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
   .button-searchbox {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 15px;
     
     width: 265px;
     height: 245px;
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
   }
 
-  .social-buttons {
+  .social {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -250,6 +329,33 @@ and (-webkit-min-device-pixel-ratio: 1) {
     left: -1px;
     top: 960px;
   }
+
+  .icoSite {
+    width: 30px;
+    height: 30px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .icoFacebook {
+    width: 30px;
+    height: 30px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .icoInstagram {
+    width: 30px;
+    height: 30px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
 }
 
 /*Big smartphones*/
@@ -259,7 +365,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
   and (-webkit-min-device-pixel-ratio: 1) {
 
   body {
-    background-color: green;
+    background: green;
   }
 }
 
@@ -271,6 +377,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
   
  
   body {
-    background-color: yellow;
+    background: yellow;
   }
 }
