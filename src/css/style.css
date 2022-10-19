@@ -471,7 +471,16 @@ footer {
   and (orientation:landscape)
   and (-webkit-min-device-pixel-ratio: 1) {
 
-  body {
-    background: purple;
-  }
+    body {
+      background: #FFB64E;
+    }
+
+    .logo {
+      margin-bottom: 25px;
+    }
+
+    .menu-buttons button {
+      width: 215px;
+      height: 50px;
+    }
 }
