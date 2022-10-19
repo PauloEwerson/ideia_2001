@@ -224,15 +224,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
     /* background: yellow; */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 0px;
-    
-    /* position: relative; */
-    /* width: 265px; */
+
     height: 370px;
-    /* left: 252px;
-    top: 327px; */
   }
 
   .logo {
@@ -312,27 +308,41 @@ and (-webkit-min-device-pixel-ratio: 1) {
     height: 245px;
   }
 
-  .social {
-    /* background: red; */
+  footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+  }
+
+  .social {
+    /* background: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
     padding: 0px;
     
     position: absolute;
     width: 100%;
     height: 64px;
-    top: 960px;
+    /* top: 960px; */
   }
 
   .social div {
-    margin-right: 15px;
+    /* background: red; */
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+    height: 100%;
   }
 
-  .icoSite {
+  .social img {
+    /* background: green; */
     width: 30px;
     height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
 
     flex: none;
     order: 0;
