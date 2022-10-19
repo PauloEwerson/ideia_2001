@@ -186,7 +186,7 @@ header {
   flex-grow: 0;
 }
 
-.box-idioma {
+/* .box-idioma {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -194,12 +194,43 @@ header {
 
   position: absolute;
   width: 121.33px;
+  width: 121.33px;
   height: 34px;
   left: 15px;
   top: 15px;
 
   background: #FFFFFF;
   border-radius: 50px;
+} */
+
+.selectIdioma {
+  font-family: 'Roboto';
+  background: #FFFFFF;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 121.33px;
+  height: 34px;
+  padding: 5px 12px;
+  border-radius: 50px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.imageFlagCount {
+  margin-left: 10px;
+}
+
+.selectIdioma select {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
 }
 
 .main-container {
