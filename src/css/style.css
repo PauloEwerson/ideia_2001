@@ -11,9 +11,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
   
   body {
-    /* position: relative; */
-    /* width: 768px;
-    height: 1024px; */
     background: #444242;
   }
 
@@ -37,8 +34,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
   .logo-header {
     display: none;
-    position: absolute;
-    width: 122px;
+    /* position: absolute; */
+    /* width: 122px; */
+    width: 100%;
     height: 38.01px;
     left: calc(50% - 122px/2);
     top: 12.99px;
@@ -229,7 +227,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
     justify-content: flex-start;
     align-items: center;
     padding: 0px;
-    /* gap: 50px; */
     
     /* position: relative; */
     /* width: 265px; */
@@ -316,18 +313,21 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
 
   .social {
+    /* background: red; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 15px;
     
     position: absolute;
-    width: 769px;
+    width: 100%;
     height: 64px;
-    left: -1px;
     top: 960px;
+  }
+
+  .social div {
+    margin-right: 15px;
   }
 
   .icoSite {
