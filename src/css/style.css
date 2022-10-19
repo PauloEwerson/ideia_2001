@@ -274,6 +274,7 @@ header {
 }
 
 .menu-buttons {
+  /* background: purple; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -288,6 +289,8 @@ header {
   align-items: center;
   padding: 0px;
   margin-top: 10px;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
   
   width: 265px;
   height: 50px;
@@ -413,10 +416,40 @@ footer {
   and (max-device-width: 1023px)
   and (max-device-height: 499px)
   and (orientation:landscape)
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (-webkit-min-device-pixel-ratio: 1) { 
 
   body {
+    min-height: 100vh;
     background: green;
+  }
+  
+  .logo-botoes {
+    /* background: yellow; */
+    height: 100%;
+    width: 100%;
+  }
+  
+  .logo {
+    /* background: green; */
+    margin-bottom: 50px;
+  }
+
+  .menu-buttons {
+    /* background: purple; */
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 577px;
+    height: 115px;
+  }
+
+  .menu-buttons button {
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+  }
+
+  .social {
+    display: none;
   }
 }
  
