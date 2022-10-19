@@ -460,7 +460,7 @@ footer {
   and (orientation:portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
     body {
-      background: yellow;
+      background: #FFB64E;
     }
 }
 
