@@ -204,6 +204,7 @@ header {
 } */
 
 .selectIdioma {
+  position: absolute;
   font-family: 'Roboto';
   background: #FFFFFF;
   color: black;
@@ -219,6 +220,8 @@ header {
 }
 
 .imageFlagCount {
+  height: 24px;
+  width: 24px;
   margin-left: 10px;
 }
 
@@ -398,9 +401,11 @@ footer {
   and (max-device-height: 1023px)
   and (orientation:portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
+    
   body {
     background: blue
   }
+
 }
 
  /*Big smartphones*/
