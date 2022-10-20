@@ -328,7 +328,6 @@ header {
   }
 
   .main-container {
-    /* background: green; */
     flex-direction: column;
     padding: 0px;
     margin-left: 15px;
@@ -346,7 +345,6 @@ header {
   }
   
   .logo-botoes {
-    /* background: yellow; */
     height: 100%;
     width: 100%;
   }
@@ -356,7 +354,6 @@ header {
   }
 
   .section-fale-conosco {
-    /* background: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
