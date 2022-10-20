@@ -406,7 +406,7 @@ footer {
   and (-webkit-min-device-pixel-ratio: 1) {
     
   body {
-    background: blue
+    /* background: blue */
   }
 
 }
@@ -420,7 +420,7 @@ footer {
 
   body {
     min-height: 100vh;
-    background: green;
+    /* background: green; */
   }
   
   .logo-botoes {

@@ -178,7 +178,6 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px 15px;
 
   width: 100%;
   height: 50px;
@@ -192,6 +191,7 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+  margin-left: 15px;
 
   display: flex;
   align-items: center;
@@ -261,6 +261,10 @@ header {
   border-radius: 25px;
 }
 
+.botao-fale-conosco {
+  display: none;
+}
+
  /*Big smartphones*/
 @media only screen
   and (max-device-width: 499px)
@@ -287,6 +291,22 @@ header {
     height: 32px;
   }
 
+  .icone-header-menu {
+    margin-right: 15px;
+  }
+
+  .header-botoes-car-fav {
+    margin-right: -10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 27px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
 }
 
  /*Big smartphones*/
@@ -298,7 +318,31 @@ header {
 
   body {
     min-height: 100vh;
-    background: green;
+    /* background: green; */
+  }
+
+  .main-contant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main-container {
+    /* background: green; */
+    flex-direction: column;
+    padding: 0px;
+    margin-left: 15px;
+    margin-right: 7.5px;
+    height: 204px;
+    width: 50%;
+  }
+  
+  .main-container hr {
+    margin: 0px;
+  }
+  
+  .info {
+    height: 32px;
   }
   
   .logo-botoes {
@@ -306,27 +350,43 @@ header {
     height: 100%;
     width: 100%;
   }
-  
-  .logo {
-    /* background: green; */
-    margin-bottom: 50px;
+
+  .botao-footer {
+    display: none;
   }
 
-  .menu-buttons {
-    /* background: purple; */
+  .section-fale-conosco {
+    /* background: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-left: 7.5px;
+    margin-right: 15px;
+    height: 204px;
+    width: 50%;
+
+    font-weight: 700;
+  }
+
+  .botao-fale-conosco {
+    cursor: pointer;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 577px;
-    height: 115px;
+    align-items: center;
+    padding: 0px;
+    
+    width: 139px;
+    height: 50px;
+
+    background: #FA9401;
+    border: 1px solid #444242;
+    border-radius: 50px;
+    color: #fff;
   }
 
-  .menu-buttons button {
-    margin-right: 7.5px;
-    margin-left: 7.5px;
-  }
-
-  .social {
+  .socialButtons {
     display: none;
   }
 }
@@ -340,6 +400,40 @@ header {
     body {
       /* background: #FFB64E; */
     }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      isolation: isolate;
+      
+      width: 100%;
+      height: 64px;
+    
+      background: #444242;
+    }
+
+    .logo-header {
+      height: 30.01px;
+      top: 19px;
+    }
+
+    .icone-header-menu {
+      margin-right: 15px;
+    }
+
+    .header-botoes-car-fav {
+      margin-right: -10px;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      height: 27px;
+      
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
 }
 
 /*Small smartphones Landscape*/
@@ -350,23 +444,72 @@ header {
   and (-webkit-min-device-pixel-ratio: 1) {
 
     body {
-      background: #FFB64E;
+      /* background: #FFB64E; */
     }
 
-    .logo {
-      margin-bottom: 25px;
+    .main-contant {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
-
-    .menu-buttons button {
-      width: 215px;
+  
+    .main-container {
+      flex-direction: column;
+      padding: 0px;
+      margin-left: 15px;
+      margin-right: 7.5px;
+      height: 200px;
+      width: 60%;
+    }
+    
+    .main-container hr {
+      margin: 0px;
+    }
+    
+    .info {
+      height: 32px;
+    }
+    
+    .logo-botoes {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .botao-footer {
+      display: none;
+    }
+  
+    .section-fale-conosco {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      margin-left: 7.5px;
+      margin-right: 15px;
+      height: 204px;
+      width: 40%;
+  
+      font-weight: 700;
+    }
+  
+    .botao-fale-conosco {
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      
+      width: 139px;
       height: 50px;
+  
+      background: #FA9401;
+      border: 1px solid #444242;
+      border-radius: 50px;
+      color: #fff;
     }
-
-    .menu-buttons button {
-      border: 2px solid #FFFFFF;
-    }
-
-    .menu-buttons button:focus {
-      border: 2px solid #444242;
+  
+    .socialButtons {
+      display: none;
     }
 }
