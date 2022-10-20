@@ -25,8 +25,8 @@
 
 Página inicial e contato desenvolvida para a empresa [Ideia 2001](https://www.ideia2001.com.br/), especializada em catálogos eletrônicos para o mercado de autopeças.
   
-## :boom: Demonstração
-[Demo](https://ideia2001.netlify.app/)
+## :bulb: Demonstração
+- [Demo](https://ideia2001.netlify.app/)
 
 ## :rocket: Tecnologias
 
