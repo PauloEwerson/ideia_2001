@@ -25,15 +25,12 @@ header {
 }
 
 .logo-header {
-  /* background: yellow; */
   display: block;
   position: absolute;
   display: flex;
   justify-content: center;
-  /* width: 122px; */
   width: 100%;
   height: 38.01px;
-  /* left: calc(50% - 122px/2); */
   top: 12.99px;
 
   flex: none;
@@ -47,7 +44,6 @@ header {
 }
 
 .icone-header-voltar {
-  /* background: yellow; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,22 +61,18 @@ header {
   height: 16px;
   margin-left: 15px;
   
-  /* background: #FFFFFF; */
-  
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .header-botoes {
-  /* background: red; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   padding: 0px;
   
-  /* width: 90%; */
   height: 20px;
   
   flex: none;
@@ -98,8 +90,6 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
-  /* background: green; */
-  /* padding: 30px; */
 }
 
 .qtd-fav {
@@ -119,9 +109,7 @@ header {
   
   position: absolute;
   width: 16px;
-  /* width: 50%; */
   height: 16px;
-  /* left: 16px; */
   top: 0px;
   
   background: #FA9401;
@@ -146,7 +134,6 @@ header {
 }
 
 .car-fav {
-  /* background: blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,15 +152,12 @@ header {
   width: 20px;
   height: 19px;
   
-  /* background: #FFFFFF; */
-  
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .icone-header-menu {
-  /* background: yellow; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,23 +172,6 @@ header {
   order: 1;
   flex-grow: 0;
 }
-
-/* .box-idioma {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 5px 12px;
-
-  position: absolute;
-  width: 121.33px;
-  width: 121.33px;
-  height: 34px;
-  left: 15px;
-  top: 15px;
-
-  background: #FFFFFF;
-  border-radius: 50px;
-} */
 
 .subHeader {
   background: #F2F2F2;
@@ -237,8 +204,6 @@ header {
   display: flex;
   flex-direction: column;
   padding: 0px;
-  /* height: 100vh; */
-  /* background: #c21313; */
   padding: 15px;
 }
 
@@ -250,9 +215,9 @@ header {
 .info {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 10px;
   margin: 0px;
-  /* background: #188818; */
   color: #5B5A5A;
 }
 
@@ -261,7 +226,6 @@ header {
 }
 
 .socialButtons {
-  /* background: red; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -278,8 +242,6 @@ header {
   flex-direction: row;
   justify-content: center;
   padding: 15px 0px;
-  /* height: 50px; */
-  /* width: 100%; */
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -305,9 +267,20 @@ header {
   and (max-device-height: 1023px)
   and (orientation:portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
-    
-  body {
-    background: blue
+
+  .main-container {
+    padding: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 204px;
+  }
+  
+  .main-container hr {
+    margin: 0px;
+  }
+  
+  .info {
+    height: 32px;
   }
 
 }

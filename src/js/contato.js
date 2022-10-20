@@ -1,7 +1,6 @@
 goHomeByLogo = () => {
   const contactButton = document.querySelector('.logo-header');
   contactButton.addEventListener('click', () => {
-    // console.log('Cheguei!')
     window.location.href = 'index.html';
   });
 }
@@ -10,7 +9,6 @@ goHomeByLogo();
 goHomeByArrow = () => {
   const contactButton = document.querySelector('.icone-header-voltar');
   contactButton.addEventListener('click', () => {
-    // console.log('Cheguei!')
     window.location.href = 'index.html';
   });
 }
