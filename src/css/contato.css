@@ -267,6 +267,10 @@ header {
   and (max-device-height: 1023px)
   and (orientation:portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
+    
+  body {
+    /* background: blue */
+  }
 
   .main-container {
     padding: 0px;
@@ -334,7 +338,7 @@ header {
   and (orientation:portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
     body {
-      background: #FFB64E;
+      /* background: #FFB64E; */
     }
 }
 
