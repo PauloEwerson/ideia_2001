@@ -8,7 +8,7 @@
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/PauloEwerson/ideia_2001?style=flat-square">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/PauloEwerson/ideia_2001?style=flat-square">
-  <img alt="Made by Ideia 2001" src="https://img.shields.io/badge/made%20by-Ideia_2001-%237519C1?style=flat-square"><br/>
+  <img alt="Made by Ideia 2001" src="https://img.shields.io/badge/made%20by-Ideia_2001-%23750?style=flat-square"><br/>
 </p>
 
 <p align="center">
